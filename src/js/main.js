@@ -8,6 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const slider = new MainSlider({btns: '.next', container: '.page'});
     slider.render();
 
+    const modulePageSlider = new MainSlider({container: '.moduleapp', btns: '.next'});
+    modulePageSlider.render();
+
     const showUpSlider = new MiniSlider({
         container: '.showup__content-slider',
         prev: '.showup__prev',
@@ -38,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const player = new VideoPlayer('.showup .play', '.overlay');
     player.init();
 
-    
+
     new Difference('.officerold', '.officernew', '.officer__card-item').init();
     new Form('.form').init();
 });
